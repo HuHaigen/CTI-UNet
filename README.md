@@ -3,7 +3,7 @@
 
 ## Abstract
 
-Recent advancements in medical image segmentation have demonstrated superior performance by combining Transformer and U-Net due to the Transformer's exceptional ability to capture long-range semantic dependencies. However, existing approaches mostly replace or concatenate the Convolutional Neural Networks (CNNs) and Transformers in series, which limits the potential of their combination. In this paper, we introduce a dual-branch feature encoder, CTI-UNet, that effectively fuses the global representations and local features of the CNN and Transformer branches at different scales through bidirectional feature interaction. Our proposed method outperforms existing approaches on multiple medical datasets, demonstrating state-of-the-art performance.
+Recent advancements in medical image segmentation have demonstrated superior performance by combining Transformer and U-Net due to the Transformer's exceptional ability to capture long-range semantic dependencies. However, existing approaches mostly replace or concatenate the Convolutional Neural Networks (CNNs) and Transformers in series, which limits the potential of their combination. In this paper, we introduce a dual-branch feature encoder, CTI-UNet, that effectively fuses the global representations and local features of the CNN and Transformer branches at different scales through bidirectional feature interaction. Our proposed method outperforms existing approaches on multiple medical datasets, demonstrating state-of-the-art performance. The code for CTI-UNet is publicly available at https://anonymous.4open.science/r/CTI-UNet-EDA8.
 
 
 
