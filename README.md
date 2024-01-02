@@ -3,7 +3,7 @@
 
 ## Abstract
 
-Recent advancements in medical image segmentation have demonstrated superior performance by combining Transformer and U-Net due to the Transformer's exceptional ability to capture long-range semantic dependencies. However, existing approaches mostly replace or concatenate the Convolutional Neural Networks (CNNs) and Transformers in series, which limits the potential of their combination. In this paper, we introduce a dual-branch feature encoder, CTI-UNet, that effectively fuses the global representations and local features of the CNN and Transformer branches at different scales through bidirectional feature interaction. Our proposed method outperforms existing approaches on multiple medical datasets, demonstrating state-of-the-art performance. The code for CTI-UNet is publicly available at https://anonymous.4open.science/r/CTI-UNet-EDA8.
+Recent advancements in medical image segmentation have demonstrated superior performance by combining Transformer and U-Net due to the Transformer's exceptional ability to capture long-range semantic dependencies. However, existing approaches mostly replace or concatenate the Convolutional Neural Networks (CNNs) and Transformers in series, which limits the potential of their combination. In this paper, we introduce a dual-branch feature encoder, CTI-UNet, that effectively fuses the global representations and local features of the CNN and Transformer branches at different scales through bidirectional feature interaction. Our proposed method outperforms existing approaches on multiple medical datasets, demonstrating state-of-the-art performance. The code for CTI-UNet is publicly available at https://github.com/HuHaigen/CTI-UNet.
 
 
 
@@ -40,3 +40,20 @@ python tools/train.py local_configs/cti_unet/cti-unet-aux_l4_i4_1x2_224x224_80k_
 ```
 
 All training logs will be saved in `./work_dirs` folder by default.
+
+
+## Reference
+
+Please cite our paper if you find this work useful:
+
+```
+@INPROCEEDINGS{10222235,
+  author={Hu, Haigen and Jin, Zhichao and Zhou, Qianwei and Guan, Qiu and Chen, Qi},
+  booktitle={2023 IEEE International Conference on Image Processing (ICIP)}, 
+  title={CTI-Unet: Hybrid Local Features and Global Representations Efficiently}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={735-739},
+  doi={10.1109/ICIP49359.2023.10222235}}
+```
