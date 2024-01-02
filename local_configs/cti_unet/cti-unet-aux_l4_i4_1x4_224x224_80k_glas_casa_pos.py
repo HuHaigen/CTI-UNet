@@ -75,8 +75,8 @@ model = dict(
                 type='CrossEntropyLoss',
                 loss_name='loss_ce',
                 use_sigmoid=False,
-                loss_weight=0.1),
-            dict(type='DiceLoss', loss_name='loss_dice', loss_weight=0.1)
+                loss_weight=0.5),
+            dict(type='DiceLoss', loss_name='loss_dice', loss_weight=0.5)
         ]))
 dataset_type = 'GlasDataset'
 data_root = 'data/glas/'
